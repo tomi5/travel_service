@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Find your perfect trip!</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link  rel="stylesheet" href="css/lightbox.min.css">
+
+  <link rel="stylesheet" href="css/main_style.css">
+
+</head>
+
+<body class="bg-light" data-spy="scroll" data-target=".navbar" data-offset="80">
+
+  <!-- HEADER -->
+
+  <header id="home" class="d-flex align-items-center mb-5">
+
+    <div class="overlay"></div>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow">
+      <div class="container">
+
+        <a class="navbar-brand font-weight-bold" style="color:#7c6044;" href="#"><img src="img/logo.png" width="70" class="logo d-inline-block" alt="back to home">Dream Travel</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+          <!-- MANI NAV -->
+          <ul class="main-nav navbar-nav nav-pills text-uppercase text-center ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link active px-3" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#destination">Offer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#hotels">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mx-4 mt-5">
+      <div class="row justify-content-between mt-5">
+
+        <div
+          class="col-md-5 d-flex flex-column align-self-center align-items-center text-center text-white mb-5 px-3 offset-md-1">
+          <h1 class="display-4 font-weight-bold my-4">Dream Travel</h1>
+          <hr class="main-heading-line w-50">
+          <h2 class="h5 m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur.
+          </h2>
+          <a class="btn btn-light btn-lg text-uppercase font-weight-bold text-dark my-4 shadow-lg" href="#about" role="button">Who we are</a>
+        </div>
+
+        <!-- HEADER SEARCH CONTAINER -->
+
+        <div class="col-md-6 mb-5 text-center text-white">
+          <h3 class="my-4 text-uppercase font-weight-normal">Find your perfect trip</h3>
+
+          <!-- HEADER SEARCH TABS-->
+          <ul class="nav nav-tabs justify-content-md-start justify-content-center" id="myTab" role="tablist">
+
+            <li class="nav-item text-white">
+              <a class="nav-link active" id="packages-tab" data-toggle="tab" href="#packages-form" role="tab" aria-controls="packages" aria-selected="true">Packages</a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link" id="flights-tab" data-toggle="tab" href="#flights-form" role="tab" aria-controls="flights" aria-selected="false">Flights</a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link" id="hotels-tab" data-toggle="tab" href="#hotels-form" role="tab" aria-controls="hotels" aria-selected="false">Hotels</a>
+            </li>
+          </ul>
+
+
+          <div class="tab-content" id="myTabContent">
+
+            <!-- HEADER SEARCH TAB PACKAGES-->
+            <div class="tab-pane fade show active" id="packages-form" role="tabpanel" aria-labelledby="packages-tab">
+
+              <form class="mt-3" id="checkPackage">
+                <div class="form-group row text-left ml-auto">
+                  <label for="packageStart" class="col-sm-3 col-form-label">From</label>
+                  <div class="col-sm-8"><input type="text" class="form-control" id="packageStart"
+                      placeholder="Departure place"></div>
+
+                </div>
+                <div class="form-group row text-left ml-auto">
+                  <label for="packageDestination" class="col-sm-3 col-form-label">Destination</label>
+                  <div class="col-sm-8"><input type="text" class="form-control" id="packageDestination"
+                      placeholder="Holiday Destination"></div>
+                </div>
+                <div class="form-group row text-left ml-auto">
+                  <label for="packageDateStart" class="col-sm-3 col-form-label">Start</label>
+                  <div class="col-sm-8"><input type="date" class="form-control" id="packageDateStart">
+                  </div>
+                </div>
+                <div class="form-group row text-left ml-auto">
+                  <label for="packageDateEnd" class="col-sm-3 col-form-label">Return</label>
+                  <div class="col-sm-8"><input type="date" class="form-control" id="packageDateEnd">
+                  </div>
+                </div>
+
+                <div class="form-group row text-left ml-auto">
+                  <label for="packageAdults" class="col-sm-3 col-form-label">Adults</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="packageAdults">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row text-left ml-auto">
+                  <label for="packageChild" class="col-sm-3 col-form-label">Child</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="packageChild">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light mt-3" form="checkPackage">Search
+                  Package</button>
+
+
+              </form>
+
+            </div>
+
+            <!-- HEADER SEARCH TAB FLIGHTS-->
+            <div class="tab-pane fade" id="flights-form" role="tabpanel" aria-labelledby="flights-tab">
+
+              <form class="mt-3" id="checkFlight">
+                <div class="form-group row text-left ml-auto">
+                  <label for="originApt" class="col-sm-3 col-form-label">From</label>
+                  <div class="col-sm-8"><input type="text" class="form-control" id="originApt"
+                      placeholder="Origin Airport"></div>
+
+                </div>
+                <div class="form-group row text-left ml-auto">
+                  <label for="destinationApt" class="col-sm-3 col-form-label">To</label>
+                  <div class="col-sm-8"><input type="text" class="form-control" id="formGroupExampleInput2"
+                      placeholder="Destination Airport"></div>
+                </div>
+                <div class="form-group row text-left ml-auto">
+                  <label for="dateStart" class="col-sm-3 col-form-label">Start</label>
+                  <div class="col-sm-8"><input type="date" class="form-control" id="dateStart"></div>
+                </div>
+                <div class="form-group row text-left ml-auto">
+                  <label for="dateReturn" class="col-sm-3 col-form-label">Return</label>
+                  <div class="col-sm-8"><input type="date" class="form-control" id="dateReturn"></div>
+                </div>
+
+                <div class="form-group row text-left ml-auto">
+                  <label for="flightAdults" class="col-sm-3 col-form-label">Adults</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="flightAdults">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row text-left ml-auto">
+                  <label for="flightChild" class="col-sm-3 col-form-label">Child</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="flightChild">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light mt-3" form="checkFlight">Search
+                  Flight</button>
+
+
+              </form>
+            </div>
+
+            <!-- HEADER SEARCH TAB HOTELS-->
+            <div class="tab-pane fade" id="hotels-form" role="tabpanel" aria-labelledby="hotels-tab">
+
+              <form class="mt-3" id="checkHotel">
+                <div class="form-group row text-left ml-auto">
+                  <label for="hotelCity" class="col-sm-3 col-form-label">Where</label>
+                  <div class="col-sm-8"><input type="text" class="form-control" id="hotelCity" placeholder="City"></div>
+
+                </div>
+
+                <div class="form-group row text-left ml-auto">
+                  <label for="checkIn" class="col-sm-3 col-form-label">Check-in date</label>
+                  <div class="col-sm-8"><input type="date" class="form-control" id="checkIn"></div>
+                </div>
+                <div class="form-group row text-left ml-auto">
+                  <label for="checkOut" class="col-sm-3 col-form-label">Check-out date</label>
+                  <div class="col-sm-8"><input type="date" class="form-control" id="checkOut"></div>
+                </div>
+
+                <div class="form-group row text-left ml-auto">
+                  <label for="hotelAdults" class="col-sm-3 col-form-label">Adults</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="hotelAdults">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row text-left ml-auto">
+                  <label for="hotelChild" class="col-sm-3 col-form-label">Child</label>
+                  <div class="col-sm-8">
+                    <select class="form-control" id="hotelChild">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-outline-light mt-3" form="checkHotel">Check hotel
+                  availability</button>
+
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- LiveChat BOX -->
+  <aside class="dropdown live-chat d-none d-md-block">
+
+    <button class="btn btn-outline-secondary btn-live-chat btn-md-md" type="button" id="dropdownMenuButton"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Live chat now! <span class="far fa-comments pl-4" aria-hidden="true"></span>
+    </button>
+
+    <form class="dropdown-menu dropdown-menu-right px-2 shadow" style="width:300px;">
+
+      <p class="font-weight-bold text-uppercase text-center">ask an expert</p>
+      <div class="dropdown-divider border-secondary mb-4"></div>
+      <h5 class="text-center">Welcome in Dream Travel!</h5>
+      <p class="h6 text-center font-weight-normal">Please enter your name and e-mail before the chat begins</p>
+      <div class="dropdown-divider mb-4"></div>
+      <div class="form-group">
+        <label for="caller-name">Your name:</label>
+        <input type="text" class="form-control" id="callerName" placeholder="Your name">
+      </div>
+
+      <div class="form-group">
+        <label for="callerEmail">Email address:></label>
+        <input type="email" class="form-control" id="callerEmail" placeholder="email@example.com" required>
+      </div>
+
+      <a class="btn btn-primary my-5 px-5 text-white">Let's start!</a>
+    </form>
+
+
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main>
+
+    <!-- SECTION ABOUT -->
+    <section id="about" class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-md-6 mb-5 align-self-center order-md-last">
+          <h5 class="mb-3">About us</h5>
+          <h2 class="mb-5">Who we are?</h2>
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem rem esse
+            exercitationem
+            accusantium tempora
+            doloribus harum. Repellat dignissimos omnis mollitia, et modi, assumenda sunt quisquam eius
+            totam nostrum soluta
+            quaerat ipsa. Maxime impedit ullam repellendus! Nostrum ex nobis harum iusto!</p>
+        </div>
+
+        <div class="col-md-5 mb-5 order-md-first align-self-center"><img src="img/our_team.jpg"
+            class="img-fluid shadow-lg img-thumbnail rounded" alt="Dream Travel Team photo">
+        </div>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- SECTION DESTINATION -->
+    <section id="destination" class="container my-5 destination">
+
+      <h2 class="text-uppercase text-center my-4">Our specialization</h2>
+      <p class="lead text-center">Let us make your dreams come true</p>
+
+      <div class="row my-5">
+
+        <div class="col-lg-4 col-md-6 text-center mb-5">
+          <div class="card">
+            <div class="img-wrapper"> <img src="img/tropical_island-min.jpg" class="card-img-top" alt="tropical island">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Vacation in paradise</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae!
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary align-self-center mb-4">Read more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 text-center mb-5">
+          <div class="card">
+            <div class="img-wrapper"> <img src="img/hiking-min.jpg" class="card-img-top" alt="hikking woman"></div>
+            <div class="card-body">
+              <h5 class="card-title">Hikking</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae!
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary align-self-center mb-4">Read more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 text-center mb-5">
+          <div class="card">
+            <div class="img-wrapper"><img src="img/asia-min.jpg" class="card-img-top" alt="monk"></div>
+            <div class="card-body">
+              <h5 class="card-title">Discover Asia</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae!
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary align-self-center mb-4">Read more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 text-center mb-5">
+          <div class="card">
+            <div class="img-wrapper"> <img src="img/ski_resort-min.jpg" class="card-img-top" alt="snowboarder"></div>
+            <div class="card-body">
+              <h5 class="card-title">Skiing &amp; Snowboarding</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae!
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary align-self-center mb-4">Read more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 text-center mb-5">
+          <div class="card">
+            <div class="img-wrapper"><img src="img/adventure-min.jpg" class="card-img-top"
+                alt="a group of camping people"></div>
+            <div class="card-body">
+              <h5 class="card-title">Unforgettable adventure</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae!
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary align-self-center mb-4">Read more</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 text-center mb-5">
+          <div class="card">
+            <div class="img-wrapper"><img src="img/weedings-min.jpg" class="card-img-top"
+                alt="newlyweds in the Vatican"></div>
+            <div class="card-body">
+              <h5 class="card-title">Amazing weeding venues</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quae!
+              </p>
+            </div>
+            <a href="#" class="btn btn-primary align-self-center mb-4">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- SECTION PACKAGES -->
+    <section id="packages" class="my-5 container">
+
+      <h2 class="text-uppercase text-center my-4">Today's hot deals</h2>
+      <p class="lead text-center">Check what we prepere for you today</p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+
+          <div class="img-thumbnail">
+            <div id="hotOffer" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#hotOffer" data-slide-to="0" class="active"></li>
+                <li data-target="#hotOffer" data-slide-to="1"></li>
+                <li data-target="#hotOffer" data-slide-to="2"></li>
+                <li data-target="#hotOffer" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner rounded-lg ">
+
+                <div class=" carousel-item
+							 overflow-hidden active">
+                  <img src="img/dog_sledding.jpg" class="img-fluid d-block rounded w-100" alt="dog sledding">
+                  <div class="overlay"></div>
+                  <div class="carousel-caption">
+                    <h5>Dog Sledding In Alaska</h5>
+                    <p class="d-none d-md-block">Nulla vitae elit libero, a pharetra augue mollis
+                      interdum.</p>
+                    <a href="#" class="btn btn-danger btn-lg align-self-center mb-2">from 199 $</a>
+                  </div>
+                </div>
+
+                <div class="carousel-item overflow-hidden">
+                  <img src="img/safari.jpg" class="img-fluid d-block rounded w-100" alt="elephant on safari">
+                  <div class="overlay"></div>
+                  <div class="carousel-caption">
+                    <h5>Safari Tour</h5>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit.</p>
+                    <a href="#" class="btn btn-danger btn-lg align-self-center mb-2">from 199 $</a>
+                  </div>
+                </div>
+
+                <div class="carousel-item overflow-hidden">
+                  <img src="img/surfing.jpg" class="img-fluid d-block rounded w-100" alt="surffing man">
+                  <div class="overlay"></div>
+                  <div class="carousel-caption">
+                    <h5>Australian Surfing Adventures</h5>
+                    <p class="d-none d-md-block">Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.</p>
+                    <a href="#" class="btn btn-danger btn-lg align-self-center mb-2">from 199 $</a>
+                  </div>
+                </div>
+
+                <div class="carousel-item overflow-hidden">
+                  <img src="img/kilimanjaro.jpg" class="img-fluid d-block rounded w-100" alt="kilimanjaro peak">
+                  <div class="overlay"></div>
+                  <div class="carousel-caption">
+                    <h5>Climbing Kilimanjaro</h5>
+                    <p class="d-none d-md-block">Praesent commodo cursus magna, vel scelerisque nisl
+                      consectetur.</p>
+                    <a href="#" class="btn btn-danger btn-lg align-self-center btn-dangermb-2">from 199 $</a>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#hotOffer" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+								</a>
+              <a class="carousel-control-next" href="#hotOffer" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+								</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- SECTION HOTEL -->
+    <section id="hotels" class="my-5 container">
+
+      <h2 class="text-uppercase text-center my-4">Dream Hotel Chain</h2>
+      <p class="lead text-center">Our hotels around the world</p>
+
+      <div class=" row justify-content-center card-deck">
+
+        <div class="col-lg-4 col-md-6 my-4">
+          <div class="card overflow-hidden">
+            <img src="img/hotel.jpg" class="card-img-top" alt="room photo">
+            <div class="card-body">
+
+              <div class="row">
+                <h5 class="col card-title pr-0">Hotel Dream</h5>
+                <div class="col hotel-stars text-right">
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/" target="_blank" class="card-text pb-2 border-bottom"><small class="text-muted">View on map</small></a>
+              <ul class="row pt-4 px-0 ">
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Swimingpool<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Gymnesium<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Wi-Fi<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Room
+                  service<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Adults
+                  only<span>NO</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Air
+                  Contition<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between pt-4 pb-2 border-bottom  align-items-end">
+                  Price per night<a href="#" class="btn btn-warning btn-sm font-weight-bold">200$</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary d-block mt-2">Check availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-4">
+          <div class="card overflow-hidden">
+            <img src="img/hotel.jpg" class="card-img-top" alt="room photo">
+            <div class="card-body">
+
+              <div class="row">
+                <h5 class="col card-title pr-0">Hotel Dream</h5>
+                <div class="col hotel-stars text-right">
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/" target="_blank" class="card-text pb-2 border-bottom"><small class="text-muted">View on map</small></a>
+              <ul class="row pt-4 px-0 ">
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Swimingpool<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Gymnesium<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Wi-Fi<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Room
+                  service<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Adults
+                  only<span>NO</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Air
+                  Contition<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between pt-4 pb-2 border-bottom  align-items-end">
+                  Price per night<a href="#" class="btn btn-warning btn-sm font-weight-bold">200$</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary d-block mt-2">Check availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-4">
+          <div class="card overflow-hidden">
+            <img src="img/hotel.jpg" class="card-img-top" alt="room photo">
+            <div class="card-body">
+
+              <div class="row">
+                <h5 class="col card-title pr-0">Hotel Dream</h5>
+                <div class="col hotel-stars text-right">
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/" target="_blank" class="card-text pb-2 border-bottom"><small class="text-muted">View on map</small></a>
+              <ul class="row pt-4 px-0 ">
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Swimingpool<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Gymnesium<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Wi-Fi<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Room
+                  service<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Adults
+                  only<span>NO</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Air
+                  Contition<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between pt-4 pb-2 border-bottom  align-items-end">
+                  Price per night<a href="#" class="btn btn-warning btn-sm font-weight-bold">200$</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary d-block mt-2">Check availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-4">
+          <div class="card overflow-hidden">
+            <img src="img/hotel.jpg" class="card-img-top" alt="room photo">
+            <div class="card-body">
+
+              <div class="row">
+                <h5 class="col card-title pr-0">Hotel Dream</h5>
+                <div class="col hotel-stars text-right">
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/" target="_blank" class="card-text pb-2 border-bottom"><small class="text-muted">View on map</small></a>
+              <ul class="row pt-4 px-0 ">
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Swimingpool<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Gymnesium<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Wi-Fi<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Room
+                  service<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Adults
+                  only<span>NO</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Air
+                  Contition<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between pt-4 pb-2 border-bottom  align-items-end">
+                  Price per night<a href="#" class="btn btn-warning btn-sm font-weight-bold">200$</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary d-block mt-2">Check availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-4">
+          <div class="card overflow-hidden">
+            <img src="img/hotel.jpg" class="card-img-top" alt="room photo">
+            <div class="card-body">
+
+              <div class="row">
+                <h5 class="col card-title pr-0">Hotel Dream</h5>
+                <div class="col hotel-stars text-right">
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/" target="_blank" class="card-text pb-2 border-bottom"><small class="text-muted">View on map</small></a>
+              <ul class="row pt-4 px-0 ">
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Swimingpool<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Gymnesium<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Wi-Fi<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Room
+                  service<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Adults
+                  only<span>NO</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Air
+                  Contition<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between pt-4 pb-2 border-bottom  align-items-end">
+                  Price per night<a href="#" class="btn btn-warning btn-sm font-weight-bold">200$</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary d-block mt-2">Check availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 my-4">
+          <div class="card overflow-hidden">
+            <img src="img/hotel.jpg" class="card-img-top" alt="room photo">
+            <div class="card-body">
+
+              <div class="row">
+                <h5 class="col card-title pr-0">Hotel Dream</h5>
+                <div class="col hotel-stars text-right">
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                  <span class="fas fa-star" aria-hidden="true"></span>
+                </div>
+              </div>
+              <a href="https://maps.google.com/" target="_blank" class="card-text pb-2 border-bottom"><small class="text-muted">View on map</small></a>
+              <ul class="row pt-4 px-0 ">
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Swimingpool<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Gymnesium<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">
+                  Wi-Fi<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Room
+                  service<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Adults
+                  only<span>NO</span></li>
+                <li class="col-12 d-flex justify-content-between py-2 border-bottom">Air
+                  Contition<span>YES</span></li>
+                <li class="col-12 d-flex justify-content-between pt-4 pb-2 border-bottom  align-items-end">
+                  Price per night<a href="#" class="btn btn-warning btn-sm font-weight-bold">200$</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary d-block mt-2">Check availability</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION TAILOR MADE REQUEST -->
+    <section class="tailor-made-request">
+      <div class="container-fluid  text-white" style="background-color:#7c6044;">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6 col-md-6 pl-lg-5">
+            <h4 class="pt-3">Did not find your dream packages?</h4>
+            <h5>Feel free to ask us.</h5>
+            <h5>We‘ll make it for you.</h5>
+            <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora velit ut, illo
+              quas nesciunt
+              quam
+              dignissimos, dolorem officiis soluta suscipit commodi illum nihil.</p>
+            <button class="btn btn-outline-light text-uppercase mt-2 mb-4" data-toggle="modal"
+              data-target="#modalRequest">Reqest
+              custom price</button>
+
+            <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="specialRequestModal"
+              aria-hidden="true" style="color:#7c6044;">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Describe your special requirements</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="customPrice">
+                      <div class="form-group">
+                        <label for="custName" class="col-form-label">Your Name</label>
+                        <input type="text" class="form-control" id="custName" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="custEmail" class="col-form-label">Your email</label>
+                        <input type="email" class="form-control" id="custEmail" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label">
+                          Query details</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" form="customPrice">Send
+                      message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-5 col-md-6 d-md-block d-none p-0">
+            <img src="img/route-66.jpg" alt="" class="img-fluid float-right">
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="mt-5 container">
+      <h2 class="text-uppercase text-center my-4">Contact us</h2>
+      <p class="lead text-center">Lorem ipsum dolor sit.</p>
+
+      <div class="row mt-5">
+
+        <div class="col-lg-4 d-flex ">
+          <div class="row align-self-center ">
+
+            <div class="col-md-12 my-3">
+              <h4>Phone</h4>
+              <a href="tel:0001123123123" style="color: #7c6044;">+001 123 123 123</a>
+            </div>
+
+            <div class="col-md-12 my-3">
+              <h4>Email</h4>
+              <a href="mailto:info@example.com" style="color: #7c6044;">info@example.com</a>
+            </div>
+
+            <div class="col-md-12 my-3">
+              <h4>Address</h4>
+              <p>Lorem ipsum dolor sit 1111/123. LOREM</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-8 mb-lg-3 m-0 p-0">
+
+          <iframe class="w-100 p-0 m-0"
+            src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=eiffel%20tower+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            frameborder="0" height="300px"></iframe>
+        </div>
+
+      </div>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="text-white" style="background-color:#7c6044;">
+    <div class="container">
+
+      <div class="row pt-5">
+
+        <div class="col-md-4 mb-3 pb-4 ">
+          <h5 class="text-uppercase font-weight-bold mb-3 pb-2 border-bottom d-inline-block">About Agency</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, saepe. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Impedit, saepe.</p>
+          <a class="navbar-brand font-weight-bold  p-0" href="#home"><img src="img/logo.png" width="70" class="logo bg-light rounded-circle mr-2 text-white" alt="back to home">Dream Travel</a>
+        </div>
+
+        <div class="col-md-4 mb-3 pb-4">
+          <h5 class="text-uppercase font-weight-bold mb-3 pb-2 border-bottom d-inline-block">Newsletter</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, saepe.</p>
+          <div class="col-auto p-0 my-4">
+            <form id="newsletterForm" class="w-75">
+              <label class="sr-only" for="newsletter">Your email</label>
+              <div class="input-group mb-2">
+
+                <input type="email" class="form-control" id="newsletter" placeholder="Your email" required>
+                <div class="input-group-prepend">
+                  <button type="submit" form="newsletterForm"
+                    class="input-group-text"><span class="fas fa-paper-plane" aria-hidden="true"></span></button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mb-3 pb-4">
+        <h5 class="text-uppercase font-weight-bold mb-3 pb-2 border-bottom d-inline-block">Photos from recent trips</h5>
+
+        <div class="row mt-3 justify-content-around">
+
+          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+            <a class="d-block h-100" href="img/gallery/rio.jpg" data-lightbox="gallery" data-title="Rio de Janerio - beach with the Pedra da Gávea at background"><img src="img/gallery/rio.jpg" alt="Rio de Janerio beach with the Pedra da Gávea at background" class="img-gallery shadow rounded-sm"></a>
+          </div>
+
+          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+            <a class="d-block h-100" href="img/gallery/antylope_canyon.jpg" data-lightbox="gallery" data-title="Arizona - Antylope Canyon"><img src="img/gallery/antylope_canyon.jpg" alt="antylope canyon" class="img-gallery shadow rounded-sm"></a>
+          </div>
+
+
+          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+            <a class="d-block h-100" href="img/gallery/eiffel_tower.jpg" data-lightbox="gallery" data-title="Paris - Eiffel Tower"><img src="img/gallery/eiffel_tower.jpg" alt="eiffel tower" class="img-gallery shadow rounded-sm"></a>
+          </div>
+
+          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+            <a class="d-block h-100" href="img/gallery/great_wall.jpg" data-lightbox="gallery" data-title="China - The Great Wall"><img src="img/gallery/great_wall.jpg" alt="great wall" class="img-gallery shadow rounded-sm"></a>
+          </div>
+
+
+          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+            <a class="d-block h-100" href="img/gallery/lighthouse.jpg" data-lightbox="gallery" data-title="Faroe Island - Lighthouse"><img src="img/gallery/lighthouse.jpg" alt="lighthouse" class="img-gallery shadow rounded-sm"></a>
+          </div>
+
+
+          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+            <a class="d-block h-100" href="img/gallery/scotland.jpg" data-lightbox="gallery" data-title="Scotland - Castle"><img src="img/gallery/scotland.jpg" alt="scotland castle" class="img-gallery shadow rounded-sm"></a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <hr style="border-top: 1px solid rgba(255,255,255,.6);">
+
+    <div class="row">
+      <div class="col text-center">
+        <address>Created by <a class="font-weight-bold" href="https://github.com/tomi5">Tomi5</a> 2019</address>
+      </div>
+
+
+    </div>
+
+    </div>
+
+
+  </footer>
+
+  
+  
+  
+<script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/lightbox.min.js"></script>
+
+  <script>
+    $(".main-nav .nav-link").on("click", function () {
+      $(".main-nav .nav-link").removeClass("active");
+      $(this).addClass("active");
+    });
+	
+	
+	
+	 
+  </script>
+</body>
+
+</html>
