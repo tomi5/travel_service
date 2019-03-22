@@ -71,9 +71,18 @@ header {
 
 .live-chat {
 	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 999;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+}
+
+@media (min-width: 768px) {
+	.live-chat {
+		top: auto;
+		left: auto;
+		bottom: 0;
+		right: 0;
+	}
 }
 
 .btn-live-chat {
@@ -84,6 +93,7 @@ header {
 	-webkit-animation: btn-shake infinite 5s both;
 	animation: btn-shake infinite 5s both;
 }
+
 
 /* stop animation effect when chat box is expended */
 .btn-live-chat[aria-expanded="true"] {
@@ -105,9 +115,9 @@ section {
 
 .card {
 	height: 100%;
-	overflow:hidden;
 	-webkit-transition: .2s;
 	transition: .2s;
+	overflow: hidden;
 }
 
 .card-img-top {
@@ -137,6 +147,10 @@ section {
 .fa-star {
 	font-size: .8rem;
 	color: rgb(235, 158, 15);
+}
+
+.close {
+	z-index: 9999;
 }
 
 .input-group-text {
