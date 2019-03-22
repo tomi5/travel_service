@@ -83,13 +83,13 @@
           <ul class="nav nav-tabs justify-content-md-start justify-content-center" id="myTab" role="tablist">
 
             <li class="nav-item text-white">
-              <a class="nav-link active" id="packages-tab" data-toggle="tab" href="#packages-form" role="tab" aria-controls="packages" aria-selected="true">Packages</a>
+              <a class="nav-link active" id="packages-tab" data-toggle="tab" href="#packages-form" role="tab" aria-controls="packages-form" aria-selected="true">Packages</a>
             </li>
             <li class="nav-item text-white">
-              <a class="nav-link" id="flights-tab" data-toggle="tab" href="#flights-form" role="tab" aria-controls="flights" aria-selected="false">Flights</a>
+              <a class="nav-link" id="flights-tab" data-toggle="tab" href="#flights-form" role="tab" aria-controls="flights-form" aria-selected="false">Flights</a>
             </li>
             <li class="nav-item text-white">
-              <a class="nav-link" id="hotels-tab" data-toggle="tab" href="#hotels-form" role="tab" aria-controls="hotels" aria-selected="false">Hotels</a>
+              <a class="nav-link" id="hotels-tab" data-toggle="tab" href="#hotels-form" role="tab" aria-controls="hotels-form" aria-selected="false">Hotels</a>
             </li>
           </ul>
 
@@ -168,7 +168,7 @@
                 </div>
                 <div class="form-group row text-left ml-auto">
                   <label for="destinationApt" class="col-sm-3 col-form-label">To</label>
-                  <div class="col-sm-8"><input type="text" class="form-control" id="formGroupExampleInput2"
+                  <div class="col-sm-8"><input type="text" class="form-control" id="destinationApt"
                       placeholder="Destination Airport"></div>
                 </div>
                 <div class="form-group row text-left ml-auto">
@@ -288,7 +288,7 @@
       <p class="h6 text-center font-weight-normal">Please enter your name and e-mail before the chat begins</p>
       <div class="dropdown-divider mb-4"></div>
       <div class="form-group">
-        <label for="caller-name">Your name:</label>
+        <label for="callerName">Your name:</label>
         <input type="text" class="form-control" id="callerName" placeholder="Your name">
       </div>
 
@@ -751,8 +751,8 @@
               data-target="#modalRequest">Reqest
               custom price</button>
 
-            <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="specialRequestModal"
-              aria-hidden="true" style="color:#7c6044;">
+            <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-hidden="true"
+              style="color:#7c6044;">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -832,11 +832,11 @@
 
           <iframe class="w-100 p-0 m-0"
             src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=eiffel%20tower+(Tytu%C5%82)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-            frameborder="0" height="300px"></iframe>
+            height="300"></iframe>
         </div>
 
       </div>
-      </div>
+
 
     </section>
 
@@ -871,48 +871,49 @@
                   <button type="submit" form="newsletterForm"
                     class="input-group-text"><span class="fas fa-paper-plane" aria-hidden="true"></span></button>
                 </div>
+              </div>
             </form>
           </div>
         </div>
-      </div>
 
 
-      <div class="col-md-4 mb-3 pb-4">
-        <h5 class="text-uppercase font-weight-bold mb-3 pb-2 border-bottom d-inline-block">Photos from recent trips</h5>
 
-        <div class="row mt-3 justify-content-around">
+        <div class="col-md-4 mb-3 pb-4">
+          <h5 class="text-uppercase font-weight-bold mb-3 pb-2 border-bottom d-inline-block">Photos from recent trips
+          </h5>
 
-          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
-            <a class="d-block h-100" href="img/gallery/rio.jpg" data-lightbox="gallery" data-title="Rio de Janerio - beach with the Pedra da Gávea at background"><img src="img/gallery/rio.jpg" alt="Rio de Janerio beach with the Pedra da Gávea at background" class="img-gallery shadow rounded-sm"></a>
+          <div class="row mt-3 justify-content-around">
+
+            <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+              <a class="d-block h-100" href="img/gallery/rio.jpg" data-lightbox="gallery" data-title="Rio de Janerio - beach with the Pedra da Gávea at background"><img src="img/gallery/rio.jpg" alt="Rio de Janerio beach with the Pedra da Gávea at background" class="img-gallery shadow rounded-sm"></a>
+            </div>
+
+            <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+              <a class="d-block h-100" href="img/gallery/antylope_canyon.jpg" data-lightbox="gallery" data-title="Arizona - Antylope Canyon"><img src="img/gallery/antylope_canyon.jpg" alt="antylope canyon" class="img-gallery shadow rounded-sm"></a>
+            </div>
+
+
+            <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+              <a class="d-block h-100" href="img/gallery/eiffel_tower.jpg" data-lightbox="gallery" data-title="Paris - Eiffel Tower"><img src="img/gallery/eiffel_tower.jpg" alt="eiffel tower" class="img-gallery shadow rounded-sm"></a>
+            </div>
+
+            <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+              <a class="d-block h-100" href="img/gallery/great_wall.jpg" data-lightbox="gallery" data-title="China - The Great Wall"><img src="img/gallery/great_wall.jpg" alt="great wall" class="img-gallery shadow rounded-sm"></a>
+            </div>
+
+
+            <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+              <a class="d-block h-100" href="img/gallery/lighthouse.jpg" data-lightbox="gallery" data-title="Faroe Island - Lighthouse"><img src="img/gallery/lighthouse.jpg" alt="lighthouse" class="img-gallery shadow rounded-sm"></a>
+            </div>
+
+
+            <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
+              <a class="d-block h-100" href="img/gallery/scotland.jpg" data-lightbox="gallery" data-title="Scotland - Castle"><img src="img/gallery/scotland.jpg" alt="scotland castle" class="img-gallery shadow rounded-sm"></a>
+            </div>
           </div>
-
-          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
-            <a class="d-block h-100" href="img/gallery/antylope_canyon.jpg" data-lightbox="gallery" data-title="Arizona - Antylope Canyon"><img src="img/gallery/antylope_canyon.jpg" alt="antylope canyon" class="img-gallery shadow rounded-sm"></a>
-          </div>
-
-
-          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
-            <a class="d-block h-100" href="img/gallery/eiffel_tower.jpg" data-lightbox="gallery" data-title="Paris - Eiffel Tower"><img src="img/gallery/eiffel_tower.jpg" alt="eiffel tower" class="img-gallery shadow rounded-sm"></a>
-          </div>
-
-          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
-            <a class="d-block h-100" href="img/gallery/great_wall.jpg" data-lightbox="gallery" data-title="China - The Great Wall"><img src="img/gallery/great_wall.jpg" alt="great wall" class="img-gallery shadow rounded-sm"></a>
-          </div>
-
-
-          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
-            <a class="d-block h-100" href="img/gallery/lighthouse.jpg" data-lightbox="gallery" data-title="Faroe Island - Lighthouse"><img src="img/gallery/lighthouse.jpg" alt="lighthouse" class="img-gallery shadow rounded-sm"></a>
-          </div>
-
-
-          <div class="col-lg-4 col-5 mb-2 mb-5 mb-md-3">
-            <a class="d-block h-100" href="img/gallery/scotland.jpg" data-lightbox="gallery" data-title="Scotland - Castle"><img src="img/gallery/scotland.jpg" alt="scotland castle" class="img-gallery shadow rounded-sm"></a>
-          </div>
-
-
         </div>
-      </div>
 
+      </div>
     </div>
 
 
@@ -924,10 +925,9 @@
         <address>Created by <a class="font-weight-bold" href="https://github.com/tomi5">Tomi5</a> 2019</address>
       </div>
 
-
     </div>
 
-    </div>
+
 
 
   </footer>
