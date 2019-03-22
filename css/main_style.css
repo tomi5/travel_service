@@ -3,6 +3,7 @@ html {
 	overflow-x: hidden;
 }
 
+
 *[id]:before {
 	display: block;
 	content: " ";
@@ -33,7 +34,6 @@ div.nav-pills .show>.nav-link {
 
 .navbar-brand:hover>.logo {
 	transform: rotateY(360deg);
-
 }
 
 .navbar-brand:hover {
@@ -69,7 +69,6 @@ header {
 	border-top: 1px solid rgb(255, 255, 255);
 }
 
-
 .live-chat {
 	position: fixed;
 	bottom: 0;
@@ -84,6 +83,7 @@ header {
 	animation: btn-shake infinite 5s both;
 }
 
+/* stop animation effect when chat box is expended */
 .btn-live-chat[aria-expanded="true"] {
 	animation: btn-shake infinite 0s both;
 }
@@ -95,21 +95,13 @@ header {
 	color: white;
 }
 
-
 section {
 	color: #7c6044;
 }
 
-
-
-
 .card {
 	height: 100%;
 	transition: .2s;
-}
-
-.img-wrapper {
-	overflow: hidden;
 }
 
 .card-img-top {
@@ -133,7 +125,6 @@ section {
 	background-color: #362c22;
 }
 
-
 .fa-star {
 	font-size: .8rem;
 	color: rgb(235, 158, 15);
@@ -148,10 +139,9 @@ section {
 	display: block;
 	height: 100%;
 	width: 100%;
-
 }
 
-
+/* animation for chatbox button */
 @keyframes btn-shake {
 	0% {
 		transform: translateX(0);
