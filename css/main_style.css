@@ -1,5 +1,4 @@
 html {
-	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
 
@@ -14,7 +13,7 @@ html {
 
 a,
 a:hover {
-	color: white;
+	color: #fff;
 }
 
 .navbar {
@@ -22,8 +21,7 @@ a:hover {
 }
 
 
-.navbar-nav.nav-pills .nav-link.active,
-div.nav-pills .show>.nav-link {
+.navbar-nav.nav-pills .nav-link.active {
 	color: #fff;
 	background-color: #7c6044;
 	font-weight: bold;
@@ -31,14 +29,17 @@ div.nav-pills .show>.nav-link {
 
 .logo {
 	height: 100%;
+	-webkit-transition: .2s;
 	transition: .2s;
 }
 
 .navbar-brand:hover>.logo {
+	-webkit-transform: rotateY(360deg);
 	transform: rotateY(360deg);
 }
 
 .navbar-brand:hover {
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1)
 }
 
@@ -46,9 +47,6 @@ header {
 	min-height: 100vh;
 	position: relative;
 	background: url("../img/main-banner.jpg") no-repeat 20%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 }
 
@@ -79,22 +77,26 @@ header {
 }
 
 .btn-live-chat {
+	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-color: #7c6044;
 	color: #7c6044;
+	-webkit-animation: btn-shake infinite 5s both;
 	animation: btn-shake infinite 5s both;
 }
 
 /* stop animation effect when chat box is expended */
 .btn-live-chat[aria-expanded="true"] {
+	-webkit-animation: btn-shake infinite 0s both;
 	animation: btn-shake infinite 0s both;
 }
 
 .btn-live-chat:hover {
+	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-color: #7c6044;
 	background-color: #7c6044;
-	color: white;
+	color: #fff;
 }
 
 section {
@@ -103,18 +105,22 @@ section {
 
 .card {
 	height: 100%;
+	-webkit-transition: .2s;
 	transition: .2s;
 }
 
 .card-img-top {
+	-webkit-transition: .2s;
 	transition: .2s;
 }
 
 .card:hover {
+	-webkit-box-shadow: 0px 0rem 2rem 0px rgba(0, 0, 0, .175);
 	box-shadow: 0px 0rem 2rem 0px rgba(0, 0, 0, .175);
 }
 
 .card:hover .card-img-top {
+	-webkit-transform: scale(1.1);
 	transform: scale(1.1)
 }
 
@@ -133,8 +139,12 @@ section {
 }
 
 .input-group-text {
-	color: white;
+	color: #fff;
 	background-color: rgb(255, 185, 55);
+}
+
+iframe {
+	border: none;
 }
 
 .img-gallery {
@@ -144,32 +154,76 @@ section {
 }
 
 /* animation for chatbox button */
-@keyframes btn-shake {
+@-webkit-keyframes btn-shake {
 	0% {
+		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
 
 	48% {
+		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
 
 	49% {
+		-webkit-transform: translateX(-3px);
 		transform: translateX(-3px);
 	}
 
 	50% {
+		-webkit-transform: translateX(3px);
 		transform: translateX(3px);
 	}
 
 	51% {
+		-webkit-transform: translateX(-3px);
 		transform: translateX(-3px);
 	}
 
 	52% {
+		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
 
 	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes btn-shake {
+	0% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	48% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	49% {
+		-webkit-transform: translateX(-3px);
+		transform: translateX(-3px);
+	}
+
+	50% {
+		-webkit-transform: translateX(3px);
+		transform: translateX(3px);
+	}
+
+	51% {
+		-webkit-transform: translateX(-3px);
+		transform: translateX(-3px);
+	}
+
+	52% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	100% {
+		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
 }
