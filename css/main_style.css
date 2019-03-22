@@ -105,6 +105,7 @@ section {
 
 .card {
 	height: 100%;
+	overflow:hidden;
 	-webkit-transition: .2s;
 	transition: .2s;
 }
