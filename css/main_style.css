@@ -21,6 +21,7 @@ a:hover {
 	background-color: #E8E5DE;
 }
 
+
 .navbar-nav.nav-pills .nav-link.active,
 div.nav-pills .show>.nav-link {
 	color: #fff;
@@ -29,6 +30,7 @@ div.nav-pills .show>.nav-link {
 }
 
 .logo {
+	height: 100%;
 	transition: .2s;
 }
 
