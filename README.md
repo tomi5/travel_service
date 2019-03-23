@@ -1,7 +1,7 @@
 # Travel service - landing page with search form
 
 
-landing page made as Bootstrap education project
+Bootstrap 4 training project
 
 
 ###### LADING PAGE BUILD WITH:
